@@ -1,0 +1,20 @@
+[
+    {
+        "label": "metodoQueHaceAlgo",
+        "kind": 2,
+        "importPath": "Ejericio1",
+        "description": "Ejericio1",
+        "peekOfCode": "def metodoQueHaceAlgo(valor):\n    if (valor<3):\n        return valor\n    return metodoQueHaceAlgo(valor-1)*metodoQueHaceAlgo(valor-2)\nvalor = metodoQueHaceAlgo(5)\nprint(valor)",
+        "detail": "Ejericio1",
+        "documentation": {}
+    },
+    {
+        "label": "valor",
+        "kind": 5,
+        "importPath": "Ejericio1",
+        "description": "Ejericio1",
+        "peekOfCode": "valor = metodoQueHaceAlgo(5)\nprint(valor)",
+        "detail": "Ejericio1",
+        "documentation": {}
+    }
+]
