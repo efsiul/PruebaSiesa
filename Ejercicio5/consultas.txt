@@ -1,0 +1,11 @@
+select * from mascota
+
+select * from mascota m where m.propietario =NULL
+
+select m.nombre, count(*) from mascota m group by m.tipo_mascota
+
+select prop propietario prop inner join mascota m on prop.codigo=m.fk_almacen GROUP BY prop.codigo HAVING COUNT(*) > 1 
+
+select count(tipo), count(propietario) from propietario inner join mascota on propietario.idpropietario=mascota.propietario inner join tipo_mascota tipo on mascota.tipo_mascota=tipo.idtipo_mascota group by tipo, propietario
+
+select * from propietario prop where prop.idpropietario not in (select m.propietario from mascota m)
